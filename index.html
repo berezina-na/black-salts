@@ -1,0 +1,336 @@
+<html lang="ru">
+    <head>
+        <meta charset="uft-8">
+        <title>Черная соль из Костромы</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <span>ООО "Соло Ко"</span>
+            <figure class="logo-header">
+                <a href="">
+                    <img src="" alt="Логотип">
+                </a>
+            </figure>
+            <div class="Request-a-call">
+                <a href="#modal" class="button-openModal">Заказать звонок</a>
+                <div id="modal" class="modal"> 
+                    <form id="backPhone" name="backPhone">
+                        <input name="FIO" type="Text" id="FioForm" maxlength="20" placeholder="Ваше имя" required=”required” />
+                        <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите номер телефона" required=”required” />
+                        <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="">Продукция</a></li>
+                    <li><a href="">О чёрной соли</a></li>
+                    <li><a href="">Как мы работаем</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="page-salt">
+            <div class="banner">
+                <img class="banner1" scr="">
+                <h1 class="">Оптовые продажи чёрной соли</h1>
+                    <h2>Скидки до 20%</h2>
+                    <button class=""> Заказать
+            </div>
+            <div class="catalog">
+                <section class="catalog-item"> 
+                    <img src="" alt="Чёрная соль">
+                    <h3 class="Name-item">Чёрная соль "Четверговая"</h3>
+                    <span class="price">18,70 ₽</span>
+                    <span class="Text-Item">/упаковка</span>
+                    <span class="Text-Item">98 уп. в 1 коробке</span>
+                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
+                    <input class="quantity-minus" type="button" value="-" 
+                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
+                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
+                            value="1" class="inputbox" />
+                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
+                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <span class="Text-Item2">Вес:</span>
+                    <span class="Text-Item2">кг</span>
+                    <span class="Text-Item2">Цена:</span>
+                    <span class="Text-Item2">₽</span>             
+                </section>
+                <section class="catalog-item"> 
+                    <img src="" alt="Чёрная соль">
+                    <h3 class="Name-item">Черная соль "Четверговая"</h3>
+                    <span class="price">36,75 ₽</span>
+                    <span class="Text-Item">/упаковка</span>
+                    <span class="Text-Item">82 уп. в 1 коробке</span>
+                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
+                    <input class="quantity-minus" type="button" value="-" 
+                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
+                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
+                            value="1" class="inputbox" />
+                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
+                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <span class="Text-Item2">Вес:</span>
+                    <span class="Text-Item2">кг</span>
+                    <span class="Text-Item2">Цена:</span>
+                    <span class="Text-Item2">₽</span>             
+                </section>
+                <section class="catalog-item"> 
+                    <img src="" alt="Чёрная соль">
+                    <h3 class="Name-item">Черная соль "Четверговая"</h3>
+                    <span class="Text-Item-Vvod">солонка</span>
+                    <span class="price">59,00 ₽</span>
+                    <span class="Text-Item">/упаковка</span>
+                    <span class="Text-Item">28 уп. в 1 коробке</span>
+                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
+                    <input class="quantity-minus" type="button" value="-" 
+                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
+                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
+                            value="1" class="inputbox" />
+                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
+                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <span class="Text-Item2">Вес:</span>
+                    <span class="Text-Item2">кг</span>
+                    <span class="Text-Item2">Цена:</span>
+                    <span class="Text-Item2">₽</span>             
+                </section>
+                <section class="catalog-item"> 
+                    <img src="" alt="Чёрная соль">
+                    <h3 class="Name-item">Черная соль "Салатная"</h3>
+                    <span class="price">36,75 ₽</span>
+                    <span class="Text-Item">/упаковка</span>
+                    <span class="Text-Item">82 уп. в 1 коробке</span>
+                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
+                    <input class="quantity-minus" type="button" value="-" 
+                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
+                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
+                            value="1" class="inputbox" />
+                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
+                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <span class="Text-Item2">Вес:</span>
+                    <span class="Text-Item2">кг</span>
+                    <span class="Text-Item2">Цена:</span>
+                    <span class="Text-Item2">₽</span>             
+                </section>
+                <section class="catalog-item"> 
+                    <img src="" alt="Чёрная соль">
+                    <h3 class="Name-item">Чёрная соль "Никитинская"</h3>
+                    <span class="price">26,25 ₽</span>
+                    <span class="Text-Item">/упаковка</span>
+                    <span class="Text-Item">82 уп. в 1 коробке</span>
+                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
+                    <input class="quantity-minus" type="button" value="-" 
+                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
+                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
+                            value="1" class="inputbox" />
+                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
+                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
+                            onkeyup="reloadPrices();">
+                    <span class="Text-Item2">Вес:</span>
+                    <span class="Text-Item2">кг</span>
+                    <span class="Text-Item2">Цена:</span>
+                    <span class="Text-Item2">₽</span>             
+                </section>
+            </div>
+        <form class="Order-form" name="Order-form1">
+            <h4 class="Text-Order-form">Заполните форму для оформления заказа:</h4>
+            <div class="Order-form-left">
+                <input type="text" name="fio" size=""maxlength="" value="Ваше имя*">   
+                <input type="text" name="tel" size=""maxlength="" value="Телефон*">
+                <input type="text" name="e-mail" size=""maxlength="" value="E-mail">
+                <input type="text" name="adres" size=""maxlength="" value="Адрес*">
+            </div>
+            <div class="Order-form-centre">
+                <span class="">Выберите транспортную компанию:</span>
+                <select name="transport-company" size="6">
+                    <option selected value="TC1">Транспортная компания 1
+                    <option value="TC2">Транспортная компания 2 
+                    <option value="TC3">Транспортная компания 3
+                    <option value="TC4">Транспортная компания 4
+                    <option value="TC5">Транспортная компания 5
+                    <option value="TC6">Самовывоз        
+                </select>
+            </div>
+            <div class="Order-form-right">
+                <span>Сумма</span>
+                <span>Сумма указана без учета скидки</span>
+                <span>Скидка 20%</span>
+                <span>Скидка от общей стоимости товара</span>
+                <span>Вес нетто</span>
+                <span>кг</span>
+                <span>Вес брутто</span>
+                <span>кг</span>  
+                <span>Объем</span>
+                <span>куб/м</span>
+                <span>Итого:</span>
+                <span>₽</span>
+            </div>
+            <input name="Order" type="submit" value="Оформить заказ">
+        </form>
+        <div class="banner">
+            <img src="" alt="Черная соль">
+            <div class="promo-blok">
+                <h2 class="Block-name">Как мы работаем</h2>
+                <figure class="vignette">
+                    <img src="" alt="виньетка">
+                </figure>
+                <div class="Number-promo-block">
+                    <span class="Number">01</span>
+                    <span class="Number">02</span>
+                    <span class="Number">03</span>
+                    <span class="Number">04</span>
+                </div>
+                <div class="Text_promo-block">
+                    <span class="Promo-Text">Вы совершаете заказ на сайте или по e-mail и отправляете заявку нам.</span>
+                    <span class="Promo-Text">Ожидаете звонка нашего оператора.</span>
+                    <span class="Promo-Text">Подтверждаете заказ.Совершаете оплату.</span>
+                    <span class="Promo-Text">Вы забираете продукцию самостоятельно со склада или мы доставляем её по указанному Вами адресу.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="Benefits">
+            <h2 class="Block-name">Почему стоит выбрать нас</h2>
+                <figure class="vignette">
+                    <img src="" alt="виньетка">
+                    <span>Выгода и комфорт наших заказчиков являются для нас приоритетами, поэтому мы всегда готовы предложить оптимальные условия сотрудничества</span>
+                </figure>
+                <div class="Pictograph-benefits">
+                    <figure class="Pictograph-Benefits">
+                        <img src="" alt="Пиктограмма">
+                        <span class="Text-benefits">Стабильность поставок.</span>
+                    </figure>
+                    <figure class="Pictograph-Benefits">
+                        <img src="" alt="Пиктограмма">
+                        <span class="Text-benefits">Оперативность в обработке заявок.</span>
+                    </figure>
+                    <figure class="Pictograph-Benefits">
+                        <span class="Text-benefits">Высокое качество продукции.</span><br>
+                        <span class="Promo-Text">Мы гарантируем отличные потребительские свойства продукции, отвечающие высочайшим стандартам качества.</span>
+                    </figure>
+                    <figure class="Pictograph-Benefits">
+                        <img src="" alt="Пиктограмма">
+                        <span class="Text-benefits">Гибкость в решении бизнес-задач.</span>
+                    </figure>
+                    <figure class="Pictograph-Benefits">
+                        <img src="" alt="Пиктограмма">
+                        <span class="Text-benefits">Гарантируем лучшие цены.</span>
+                    </figure>
+                </div>
+        </div>
+
+        <div class="Info-Salt">
+            <h2 class="Block-name">Полезно знать</h2>
+            <figure class="vignette">
+                <img src="" alt="виньетка">
+            </figure>
+            <div class="Info1">
+                <figure class="Salt-pic">
+                <img src="" alt="Соль">
+                </figure> 
+                <h3 class="H-Info">Как изготавливают черную соль</h3>
+                <span class="Info">Производством черной соли костромская компания ООО "Соло-Ко" 
+                    занимается уже более пятнадцати лет. За основу здесь взяли старинный русский рецепт:
+                    обжигают соль с ржаной мукой на березовых поленьях. Получается не просто экологически чистый,
+                    но и полезный продукт - уже в этом наши предки толк знали"
+                </span>
+                <figure class="Foto">
+                <img src="" alt="Производство соли">
+                </figure> 
+            </div>
+            <div class="Info2">
+                <figure class="Foto">
+                <img src="" alt="Чёрная соль">
+                </figure> 
+                <figure class="Salt-pic">
+                <img src="" alt="Соль">
+                </figure> 
+                <h3 class="H-Info">Чем полезна черная соль</h3>
+                <span class="Info">При обжиге соль лишается всех своих недостатков в виде 
+                    тяжелых металлов и излишков хлора, при этом обогащается кальцием и выводит
+                    из организма токсины. Кроме того, она полезна для пищеварительной системы человека,
+                    так как не задерживает воду в организме. Да и приправить такой солью можно
+                    абсолютно любое блюдо."
+                </span>
+            </div>
+        </div>
+
+        <div class="Block-partners">
+            <h2 class="Block-name">Где уже представлена наша продукция</h2>
+            <figure class="vignette">
+                <img src="" alt="виньетка">
+            </figure>
+            <span>Мы сотрудничаем с магазинами:</span>
+            <div class="Partners">
+                <ul class="Items-partners">
+                    <li class="Logo-partners">
+                        <img src="" alt="Высшая лига">
+                    </li>
+                    <li class="Logo-partners">
+                        <img src="" alt="Магнит">
+                    </li>
+                    <li class="Logo-partners">
+                        <img src="" alt="Пятёрочка">
+                    </li>  
+                    <li class="Logo-partners">
+                        <img src="" alt="Ашан">
+                    </li>       
+                    <li class="Logo-partners">
+                        <img src="" alt="Дом еды">
+                    </li>             
+                </ul>
+            </div>
+        </div>
+
+        <div class="Block-contacts">
+            <h2 class="Block-name">Контакты</h2>
+            <figure class="vignette">
+                <img src="" alt="виньетка">
+            </figure>
+            <div class="Contacts">
+                <img src="" alt="Телефон">
+                <a class="Tel-Contacts" href="tel:89092544447">8-909-254-4447</a>   
+                <a class="Tel-Contacts" href="tel:89065220503">8-906-522-0503</a>  
+                <img src="" alt="Электронная почта">
+                <a class="Mail-Contacts" href="mailto:blacksalt@yandex.ru">blacksalt@yandex.ru</a>  
+            </div>
+            
+            <div class="banner">
+                <div class="banner-map">
+                    <img src="" alt="Карта">
+                </div>
+                <ul class="Address">
+                    <li class="Address-map1">
+                        Адрес производства:
+                        <span>Костромская область, Кадыйский р-н, д. Иваньково, д.66</span>
+                    </li>
+                    <li class="Address-map2">
+                        Адрес самовывоза:
+                        <span>Костромская область, Кадыйский р-н, д. Иваньково, д.66</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-Upstairs">      
+            <a href="#" title="Вернуться наверх" class="buttonup"><img src=""alt="Наверх"></a>
+            <span class="Text-Upstairs">Наверх</span>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+</body>
