@@ -5,23 +5,28 @@
     </head>
     <body>
         <header class="main-header">
-            <span>ООО "Соло Ко"</span>
-            <figure class="logo-header">
-                <a href="">
-                    <img src="" alt="Логотип">
-                </a>
-            </figure>
-            <div class="Request-a-call">
-                <a href="#modal" class="button-openModal">Заказать звонок</a>
-                <div id="modal" class="modal"> 
-                    <form id="backPhone" name="backPhone">
-                        <input name="FIO" type="Text" id="FioForm" maxlength="20" placeholder="Ваше имя" required=”required” />
-                        <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите номер телефона" required=”required” />
-                        <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
-                    </form>
+            <div class="top-line">
+                <span>ООО "Соло Ко"</span>
+                <figure class="logo-header">
+                    <a href="">
+                        <img src="" alt="Логотип">
+                    </a>
+                </figure>
+                <div class="Request-a-call">
+                    <button id="telButton" type="submit" form="backPhone">
+                        <a href="#modal" class="button-openModal">Заказать звонок</a>
+                    </button>    
+                    <div id="modal" class="modal"> 
+                        <form id="backPhone" name="backPhone">
+                            <input name="FIO" type="Text" id="FioForm" maxlength="20" placeholder="Ваше имя" required=”required” />
+                            <input name="telephone" type="Tel" id="telForm" maxlength="20" placeholder="Введите номер телефона" required=”required” />
+                            <button id="telButton" type="submit" form="backPhone">Заказать звонок</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <hr>
+            <div class="line">
+            </div>    
             <nav class="main-navigation">
                 <ul>
                     <li><a href="">Продукция</a></li>
@@ -35,127 +40,151 @@
             <div class="banner">
                 <img class="banner1" scr="">
                 <h1 class="">Оптовые продажи чёрной соли</h1>
-                    <h2>Скидки до 20%</h2>
-                    <button class=""> Заказать
+                <h2>Скидки до 20%</h2>
+                <a class="Tel-Contacts" href="tel:89065220503">8-906-522-0503</a>  
+                <button class="btn-green">Заказать</button>
             </div>
             <div class="catalog">
+                <div class="title">
+                    <h2>Наша продукция</h2>
+                    <div class="row"> </div>
+                    <p class="desc-green"></p>
+                </div>
                 <section class="catalog-item"> 
-                    <img src="" alt="Чёрная соль">
+                    <figure>
+                        <img src="" alt="Чёрная соль">
+                    </figure>    
                     <h3 class="Name-item">Чёрная соль "Четверговая"</h3>
-                    <span class="price">18,70 ₽</span>
-                    <span class="Text-Item">/упаковка</span>
-                    <span class="Text-Item">98 уп. в 1 коробке</span>
-                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
-                    <input class="quantity-minus" type="button" value="-" 
-                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
-                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
-                            value="1" class="inputbox" />
-                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
-                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <span class="Text-Item2">Вес:</span>
-                    <span class="Text-Item2">кг</span>
-                    <span class="Text-Item2">Цена:</span>
-                    <span class="Text-Item2">₽</span>             
+                    <div class="descr">
+                        <span class="price">18,70 ₽</span>
+                        <span class="Text-Item">/упаковка</span>
+                        <span class="Text-Item">98 уп. в 1 коробке</span>
+                    </div>
+                    <div class="order">    
+                        <p class="Text-Item-Vvod">Введите количество коробок в партии</p>
+                        <div class="control">
+                            <button class="minus">-</button>
+                            <input type="text" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="weight">    
+                        <span class="green">Вес:<span></span> кг</span>
+                    </div>   
+                    <div class="Price-itog"> 
+                        <span class="green">Цена: <span></span>₽</span>
+                    </div>
                 </section>
                 <section class="catalog-item"> 
-                    <img src="" alt="Чёрная соль">
-                    <h3 class="Name-item">Черная соль "Четверговая"</h3>
-                    <span class="price">36,75 ₽</span>
-                    <span class="Text-Item">/упаковка</span>
-                    <span class="Text-Item">82 уп. в 1 коробке</span>
-                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
-                    <input class="quantity-minus" type="button" value="-" 
-                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
-                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
-                            value="1" class="inputbox" />
-                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
-                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <span class="Text-Item2">Вес:</span>
-                    <span class="Text-Item2">кг</span>
-                    <span class="Text-Item2">Цена:</span>
-                    <span class="Text-Item2">₽</span>             
-                </section>
+                    <figure>
+                        <img src="" alt="Чёрная соль">
+                    </figure>    
+                    <h3 class="Name-item">Чёрная соль "Четверговая"</h3>
+                    <div class="descr">
+                        <span class="price">36,75 ₽</span>
+                        <span class="Text-Item">/упаковка</span>
+                        <span class="Text-Item">82 уп. в 1 коробке</span>
+                    </div>
+                    <div class="order">    
+                        <p class="Text-Item-Vvod">Введите количество коробок в партии</p>
+                        <div class="control">
+                            <button class="minus">-</button>
+                            <input type="text" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="weight">    
+                        <span class="green">Вес:<span></span> кг</span>
+                    </div>   
+                    <div class="Price-itog"> 
+                        <span class="green">Цена: <span></span>₽</span>
+                    </div>
+                </section>                
                 <section class="catalog-item"> 
-                    <img src="" alt="Чёрная соль">
-                    <h3 class="Name-item">Черная соль "Четверговая"</h3>
-                    <span class="Text-Item-Vvod">солонка</span>
-                    <span class="price">59,00 ₽</span>
-                    <span class="Text-Item">/упаковка</span>
-                    <span class="Text-Item">28 уп. в 1 коробке</span>
-                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
-                    <input class="quantity-minus" type="button" value="-" 
-                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
-                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
-                            value="1" class="inputbox" />
-                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
-                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <span class="Text-Item2">Вес:</span>
-                    <span class="Text-Item2">кг</span>
-                    <span class="Text-Item2">Цена:</span>
-                    <span class="Text-Item2">₽</span>             
-                </section>
+                    <figure>
+                        <img src="" alt="Чёрная соль">
+                    </figure>    
+                    <h3 class="Name-item">Чёрная соль "Четверговая"</h3>
+                    <span class="text-gray">(солонка)</span>
+                    <div class="descr">
+                        <span class="price">59,00 ₽</span>
+                        <span class="Text-Item">/упаковка</span>
+                        <span class="Text-Item">28 уп. в 1 коробке</span>
+                    </div>
+                    <div class="order">    
+                        <p class="Text-Item-Vvod">Введите количество коробок в партии</p>
+                        <div class="control">
+                            <button class="minus">-</button>
+                            <input type="text" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="weight">    
+                        <span class="green">Вес:<span></span> кг</span>
+                    </div>   
+                    <div class="Price-itog"> 
+                        <span class="green">Цена: <span></span>₽</span>
+                    </div>
+                </section>                
                 <section class="catalog-item"> 
-                    <img src="" alt="Чёрная соль">
+                    <figure>
+                        <img src="" alt="Чёрная соль">
+                    </figure>    
                     <h3 class="Name-item">Черная соль "Салатная"</h3>
-                    <span class="price">36,75 ₽</span>
-                    <span class="Text-Item">/упаковка</span>
-                    <span class="Text-Item">82 уп. в 1 коробке</span>
-                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
-                    <input class="quantity-minus" type="button" value="-" 
-                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
-                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
-                            value="1" class="inputbox" />
-                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
-                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <span class="Text-Item2">Вес:</span>
-                    <span class="Text-Item2">кг</span>
-                    <span class="Text-Item2">Цена:</span>
-                    <span class="Text-Item2">₽</span>             
-                </section>
+                    <div class="descr">
+                        <span class="price">36,75 ₽</span>
+                        <span class="Text-Item">/упаковка</span>
+                        <span class="Text-Item">82 уп. в 1 коробке</span>
+                    </div>
+                    <div class="order">    
+                        <p class="Text-Item-Vvod">Введите количество коробок в партии</p>
+                        <div class="control">
+                            <button class="minus">-</button>
+                            <input type="text" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="weight">    
+                        <span class="green">Вес:<span></span> кг</span>
+                    </div>   
+                    <div class="Price-itog"> 
+                        <span class="green">Цена: <span></span>₽</span>
+                    </div>
+                </section>                   
                 <section class="catalog-item"> 
-                    <img src="" alt="Чёрная соль">
+                    <figure>
+                        <img src="" alt="Чёрная соль">
+                    </figure>    
                     <h3 class="Name-item">Чёрная соль "Никитинская"</h3>
-                    <span class="price">26,25 ₽</span>
-                    <span class="Text-Item">/упаковка</span>
-                    <span class="Text-Item">82 уп. в 1 коробке</span>
-                    <span class="Text-Item-Vvod">Введите количество коробок в партии</span>
-                    <input class="quantity-minus" type="button" value="-" 
-                            onclick="var qty_el = document.getElementById('quantity'); var qty = qty_el.value; 
-                            if( !isNaN( qty ) && qty > 1 ) qty_el.value--; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <input type="text" name="quantity" id="quantity" onKeyUp="javascript:document.getElementById('a').value = this.value;" 
-                            value="1" class="inputbox" />
-                    <input class="quantity-plus" type="button" value="+" onclick="var qty_el = document.getElementById('quantity'); 
-                            var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; document.product; jQuery('#to').val('cart'); return false;" 
-                            onkeyup="reloadPrices();">
-                    <span class="Text-Item2">Вес:</span>
-                    <span class="Text-Item2">кг</span>
-                    <span class="Text-Item2">Цена:</span>
-                    <span class="Text-Item2">₽</span>             
-                </section>
+                    <div class="descr">
+                        <span class="price">26,25 ₽</span>
+                        <span class="Text-Item">/упаковка</span>
+                        <span class="Text-Item">82 уп. в 1 коробке</span>
+                    </div>
+                    <div class="order">    
+                        <p class="Text-Item-Vvod">Введите количество коробок в партии</p>
+                        <div class="control">
+                            <button class="minus">-</button>
+                            <input type="text" placeholder="0">
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="weight">    
+                        <span class="green">Вес:<span></span> кг</span>
+                    </div>   
+                    <div class="Price-itog"> 
+                        <span class="green">Цена: <span></span>₽</span>
+                    </div>
+                </section>                
             </div>
         <form class="Order-form" name="Order-form1">
-            <h4 class="Text-Order-form">Заполните форму для оформления заказа:</h4>
             <div class="Order-form-left">
-                <input type="text" name="fio" size=""maxlength="" value="Ваше имя*">   
-                <input type="text" name="tel" size=""maxlength="" value="Телефон*">
-                <input type="text" name="e-mail" size=""maxlength="" value="E-mail">
-                <input type="text" name="adres" size=""maxlength="" value="Адрес*">
-            </div>
-            <div class="Order-form-centre">
-                <span class="">Выберите транспортную компанию:</span>
+                <h4 class="Text-Order-form">Заполните форму для оформления заказа:</h4>
+                <input type="text" name="fio" size=""maxlength="" placeholder="Ваше имя*">   
+                <input type="text" name="tel" size=""maxlength="" placeholder="Телефон*">
+                <input type="text" name="e-mail" size=""maxlength="" placeholder="E-mail">
+                <input type="text" name="adres" size=""maxlength="" placeholder="Адрес*">
+                <span class="Vibor-TK">Выберите транспортную компанию:</span>
                 <select name="transport-company" size="6">
                     <option selected value="TC1">Транспортная компания 1
                     <option value="TC2">Транспортная компания 2 
@@ -165,82 +194,71 @@
                     <option value="TC6">Самовывоз        
                 </select>
             </div>
-            <div class="Order-form-right">
-                <span>Сумма</span>
-                <span>Сумма указана без учета скидки</span>
-                <span>Скидка 20%</span>
-                <span>Скидка от общей стоимости товара</span>
-                <span>Вес нетто</span>
-                <span>кг</span>
-                <span>Вес брутто</span>
-                <span>кг</span>  
-                <span>Объем</span>
-                <span>куб/м</span>
-                <span>Итого:</span>
-                <span>₽</span>
+            <div class="Total-order">
+                <div class="total-summ">
+                    <span class="green">Сумма <span></span></span>
+                    <span class="gray">Сумма указана без учета скидки</span>
+                </div>    
+                <div class="total-discount">
+                    <span class="green">Скидка 20%</span>
+                    <span class="gray">Скидка от общей стоимости товара</span>
+                </div>
+                <div class="total-weight">
+                    <span>Вес нетто<span></span> кг</span>
+                    <span>Вес брутто<span></span> кг</span>
+                    <span>Объем<span></span>куб/м</span>
+
+                </div>    
             </div>
-            <input name="Order" type="submit" value="Оформить заказ">
+            <div class="total">
+                <span>Итого:<span></span>₽</span>               
+                <input name="Order" type="submit" value="Оформить заказ">
+            </div>
         </form>
-        <div class="banner">
-            <img src="" alt="Черная соль">
-            <div class="promo-blok">
-                <h2 class="Block-name">Как мы работаем</h2>
-                <figure class="vignette">
-                    <img src="" alt="виньетка">
-                </figure>
-                <div class="Number-promo-block">
-                    <span class="Number">01</span>
-                    <span class="Number">02</span>
-                    <span class="Number">03</span>
-                    <span class="Number">04</span>
-                </div>
-                <div class="Text_promo-block">
-                    <span class="Promo-Text">Вы совершаете заказ на сайте или по e-mail и отправляете заявку нам.</span>
-                    <span class="Promo-Text">Ожидаете звонка нашего оператора.</span>
-                    <span class="Promo-Text">Подтверждаете заказ.Совершаете оплату.</span>
-                    <span class="Promo-Text">Вы забираете продукцию самостоятельно со склада или мы доставляем её по указанному Вами адресу.</span>
-                </div>
+        <div class="promo-blok">
+            <figure class="banner-work">
+                <img src="" alt="Черная соль">
+            </figure>
+            <div class="title">
+                    <h2>Как мы работаем</h2>
+                    <div class="row"> </div>
+            </div>
+            <div class="Number-promo-block">
+                <span class="Number">01</span>
+                <span class="Number">02</span>
+                <span class="Number">03</span>
+                <span class="Number">04</span>
+            </div>
+            <div class="Text_promo-block">
+                <span class="Promo-Text">Вы совершаете заказ на сайте или по e-mail и отправляете заявку нам.</span>
+                <span class="Promo-Text">Ожидаете звонка нашего оператора.</span>
+                <span class="Promo-Text">Подтверждаете заказ.Совершаете оплату.</span>
+                <span class="Promo-Text">Вы забираете продукцию самостоятельно со склада или мы доставляем её по указанному Вами адресу.</span>
             </div>
         </div>
-
         <div class="Benefits">
-            <h2 class="Block-name">Почему стоит выбрать нас</h2>
-                <figure class="vignette">
-                    <img src="" alt="виньетка">
-                    <span>Выгода и комфорт наших заказчиков являются для нас приоритетами, поэтому мы всегда готовы предложить оптимальные условия сотрудничества</span>
-                </figure>
-                <div class="Pictograph-benefits">
-                    <figure class="Pictograph-Benefits">
-                        <img src="" alt="Пиктограмма">
-                        <span class="Text-benefits">Стабильность поставок.</span>
-                    </figure>
-                    <figure class="Pictograph-Benefits">
-                        <img src="" alt="Пиктограмма">
-                        <span class="Text-benefits">Оперативность в обработке заявок.</span>
-                    </figure>
-                    <figure class="Pictograph-Benefits">
-                        <span class="Text-benefits">Высокое качество продукции.</span><br>
-                        <span class="Promo-Text">Мы гарантируем отличные потребительские свойства продукции, отвечающие высочайшим стандартам качества.</span>
-                    </figure>
-                    <figure class="Pictograph-Benefits">
-                        <img src="" alt="Пиктограмма">
-                        <span class="Text-benefits">Гибкость в решении бизнес-задач.</span>
-                    </figure>
-                    <figure class="Pictograph-Benefits">
-                        <img src="" alt="Пиктограмма">
-                        <span class="Text-benefits">Гарантируем лучшие цены.</span>
-                    </figure>
-                </div>
+            <div class="title">
+                <h2>Почему стоит выбрать нас</h2>
+                <div class="row"> </div>
+                <p class="desc-gray">Выгода и комфорт наших заказчиков являются для нас приоритетами, поэтому мы всегда готовы предложить оптимальные условия сотрудничества</p>
+            </div>
+             <div class="benefits-items">
+                <span class="Text-benefits">Стабильность поставок.</span>
+                <span class="Text-benefits">Оперативность в обработке заявок.</span>
+                <span class="Text-benefits">Высокое качество продукции.</span><br>
+                <span class="Promo-Text">Мы гарантируем отличные потребительские свойства продукции, отвечающие высочайшим стандартам качества.</span>
+                <span class="Text-benefits">Гибкость в решении бизнес-задач.</span>
+                <span class="Text-benefits">Гарантируем лучшие цены.</span>
+            </div>
         </div>
-
         <div class="Info-Salt">
-            <h2 class="Block-name">Полезно знать</h2>
-            <figure class="vignette">
-                <img src="" alt="виньетка">
-            </figure>
+            <div class="title">
+                <h2>Полезно знать</h2>
+                <div class="row"> </div>
+            </div>
             <div class="Info1">
                 <figure class="Salt-pic">
-                <img src="" alt="Соль">
+                    <img src="" alt="Соль">
                 </figure> 
                 <h3 class="H-Info">Как изготавливают черную соль</h3>
                 <span class="Info">Производством черной соли костромская компания ООО "Соло-Ко" 
@@ -249,15 +267,15 @@
                     но и полезный продукт - уже в этом наши предки толк знали"
                 </span>
                 <figure class="Foto">
-                <img src="" alt="Производство соли">
+                    <img src="" alt="Соль">
                 </figure> 
             </div>
             <div class="Info2">
                 <figure class="Foto">
-                <img src="" alt="Чёрная соль">
+                    <img src="" alt="Чёрная соль">
                 </figure> 
                 <figure class="Salt-pic">
-                <img src="" alt="Соль">
+                    <img src="" alt="Соль">
                 </figure> 
                 <h3 class="H-Info">Чем полезна черная соль</h3>
                 <span class="Info">При обжиге соль лишается всех своих недостатков в виде 
@@ -268,13 +286,12 @@
                 </span>
             </div>
         </div>
-
         <div class="Block-partners">
-            <h2 class="Block-name">Где уже представлена наша продукция</h2>
-            <figure class="vignette">
-                <img src="" alt="виньетка">
-            </figure>
-            <span>Мы сотрудничаем с магазинами:</span>
+            <div class="title">
+                <h2>Где уже представлена наша продукция</h2>
+                <div class="row"> </div>
+                <p class="desc-black">Мы сотрудничаем с магазинами:</p>
+            </div>
             <div class="Partners">
                 <ul class="Items-partners">
                     <li class="Logo-partners">
@@ -295,12 +312,11 @@
                 </ul>
             </div>
         </div>
-
         <div class="Block-contacts">
-            <h2 class="Block-name">Контакты</h2>
-            <figure class="vignette">
-                <img src="" alt="виньетка">
-            </figure>
+           <div class="title">
+                <h2>Контакты</h2>
+                <div class="row"> </div>
+            </div>            
             <div class="Contacts">
                 <img src="" alt="Телефон">
                 <a class="Tel-Contacts" href="tel:89092544447">8-909-254-4447</a>   
@@ -308,7 +324,6 @@
                 <img src="" alt="Электронная почта">
                 <a class="Mail-Contacts" href="mailto:blacksalt@yandex.ru">blacksalt@yandex.ru</a>  
             </div>
-            
             <div class="banner">
                 <div class="banner-map">
                     <img src="" alt="Карта">
@@ -331,6 +346,29 @@
         </div>
     </main>
     <footer>
+        <div class="bottom-line">
+            <div class="line">
+            </div>                
+            <figure class="logo-header">
+                <a href="">
+                    <img src="" alt="Логотип">
+                </a>
+            </figure>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="">Продукция</a></li>
+                    <li><a href="">О чёрной соли</a></li>
+                    <li><a href="">Как мы работаем</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="Request-a-call">
+                <a class="Tel-Contacts" href="tel:89065220503">8-906-522-0503</a> 
+                <button id="telButton" type="submit" form="backPhone">
+                    <a href="#modal" class="button-openModal">Заказать звонок</a>
+                </button>    
+            </div>
+        </div>
     </footer>
-
 </body>
+</html>
